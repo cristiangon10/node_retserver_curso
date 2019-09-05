@@ -1,0 +1,1 @@
+En este curso ademas de construir respuestas a peticiones a servidor, vamos a ver la elaboracion y manejo de peticiones (POST,GET,DELETE,PUT) tambien explicamos más a profundidad en el documento peticiones_servidor.txt otros temas y conceptos más a profundidad.

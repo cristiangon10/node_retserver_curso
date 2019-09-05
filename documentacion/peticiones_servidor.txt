@@ -1,0 +1,78 @@
+Peticiones a servidor
+
+El navegador por medio de la interfaz de usuario permite al usuario realizar una o varias peticiones web. Siendo la interfaz
+de usuario el conjunto de elementos del navegador, que permiten realizar la peticion de forma activa. Una peticion web
+no solo puede ser relacionada mediante un navegador, sino como cualquier herramienta habilitada para tal fin, como por 
+ejemplo una consola de comandos.
+
+
+Ejemplos:
+-Hipervinculo: Es una porción de contenido web, texto, imagen y otros elementos que enlaza con una dirección web.
+Al darle click a un hipervinculo, el navegador genera una peticion GET automatica a la dirección URL, de dicho link.
+
+-Formulario Web: Al realizar el envio satisfactorio de los datos de un formulario, el navegador Web genera una peticion
+GET o POST (comunmente POST) automatica a la par que envia los datos al servidor.
+
+-Barra de direcciones: Todos los navegadores incluyen una barra de direcciones mediante la cual puede accederse manualmente
+a cada direccion URL, de modo que el navegador generará un peticion GET automatica a dicha URL cada vez que el usuario desee.
+
+-Script: Cualquier aplicacion javascript tiene accesso al estado del navegador, como puede modificar los datos que describan
+tal estado, de forma pasiva(sin medio de la intervencion del usuario) o de forma activa (mediante alguna accion del usuario)
+
+
+
+
+Socket: Es un concepto abstracto en el cual dos programas pueden intercambiar cualquier fluido de datos, generalmente de 
+manera fiable y ordenada. 
+Los sockets de internet constituyen el mecanismo para la entrega de paquetes de datos provenientes de la tarjeta de red a los 
+procesos o hilos apropiados. un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte
+y un par de numeros de puerto local y remoto.
+
+
+Servidor: Es un programa informatico encargado de procesar una aplicacion del lado del servidor, 
+encargado de realizar las conexiones ya sean bidireccionales o unidireccionales y asincronas o 
+sincronas con el cliente generando una respuesta en cualquier tipo de lenguaje para procesarla 
+en la aplicacion web que este consumiendo dicho servicio.
+
+
+
+HTTP: (Hypertext Transfer Protocol) o en español (Protocolo de transferencia de hipertexto) es el 
+protocolo de comunicacion que permite el manejo de informacion en la red (www).
+
+Los mensajes de http son en texto plano para ser mas faciles de depurar y ser mas legibles 
+
+
+
+
+Metodos de peticion:
+
+GET: Solicita una representacion de un recurso especificado, estas peticiones solo se deben usar para hacer 
+consultas y no deben tener ningun otro efecto.
+
+HEAD: Pide una respuesta identica al GET pero la respuesta no devuelve el cuerpo. Esto es util para recuperar 
+los metadatos de los encabezados sin respuesta, sin necesidad de traer todo el contenido.
+
+POST: Envia los datos para que sean procesados por el recurso dinamico, los datos se incluiran en el cuerpo de
+la petición. Esto puede resultar en la creacion de un nuevo recurso o de las actualizaciones de los recursos 
+existentes o ambas cosas.
+
+PUT: Sube, carga o realiza un upload de un recurso especificado(archivo o fichero), y es un camino más eficiente ya que
+POST utiliza un mensaje multiparte y el mensaje es decodificado en el servidor. En contraste el metodo PUT permite escribir 
+un archivo en una conexion socket establecida con el servidor. La desventaja del metodo PUT es que los servidores de alojamiento
+compartido no lo tienen implementado.
+
+DELETE: Borra el recurso especificado
+
+TRACE: Este metodo solicita al servidor que intrduzca en la respuesta todos los datos que reciba en el mensaje de 
+peticion. Se utiliza con fines de depuración y diagnostico ya que el cliente puede ver lo que llega al servidor y de esta forma
+ve todo lo que añaden al mensaje y los servidores intermedios.
+
+OPTIONS: Devuelve los metodos HTTP que el servidor soporta para un URL especifico. Esto puede ser utilizado para comprobar 
+la funcionalidad de un servidor web mediante petición en un lugar de un recurso especifico.
+
+CONNECT: Se utiliza para saber si se tiene acceso a un HOST, no necesariamente la peticion llega a un servidor, este
+metodo se utiliza principalmente para saber si un proxy nos da acceso a un host bajo condiciones especificas, 
+como por ejemplo corrientes de datos bidireccionales encriptadas (como lo requiere SSL).
+
+PATCH: Su funcion es la misma que PUT, el cual sobreescribe completamente un recurso. Se utiliza para actualziar, 
+de manera parcial una o varias partes. Esta orientado tambien para el uso con proxy.
